@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 	    });
 	
 	// Clone table rows
-	$(".cloneTableRows").live('click', function(){
+	$(".cloneTableRows").on('click', function(){
 		var thisTableId = $(this).parents("table").attr("id");
 		var lastRow = $('#'+thisTableId + " tbody tr.clone:last");
 		var oldID = lastRow.attr("id");
